@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - Linvest</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        /* Estilos para o menu de navegação lateral */
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #444;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidenav a {
+            padding: 16px 8px 16px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color: #ffd700;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        /* Estilos para o conteúdo */
+        .main {
+            transition: margin-left 0.5s;
+            padding: 20px;
+            margin-left: 250px;
+        }
+        .section-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .section-container h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .section-container p {
+            color: #555;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suporte - Linvest</h1>
+    </header>
+    <!-- Botão para abrir o menu de navegação -->
+    <button class="nav-btn" onclick="openNav()">☰</button>
+    <!-- Menu de navegação lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="oie.html">Início</a>
+        <a href="investimentos.html">Investimentos</a>
+        <a href="teste-qi.html">Teste de QI</a>
+    </div>
+    <!-- Conteúdo principal -->
+    <div class="main">
+        <div class="section-container">
+            <h2>Deixe seu feedback</h2>
+            <p>Por favor, selecione sua satisfação com o serviço em uma escala de 1 a 10:</p>
+            <form action="submit_feedback.php" method="post">
+                <select id="satisfaction" name="satisfaction">
+                    <option value="1">1 - Muito insatisfeito</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Neutro</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 - Muito satisfeito</option>
+                </select>
+                <input type="submit" value="Enviar Feedback">
+            </form>
+        </div>
+        <div class="section-container">
+            <h2>Envie uma mensagem</h2>
+            <p>Se você tem alguma dúvida ou precisa de suporte, sinta-se à vontade para nos enviar uma mensagem:</p>
+            <form action="submit_message.php" method="post">
+                <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+        </div>
+    </div>
+
+    <!-- Script para abrir e fechar o menu de navegação lateral -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementsByClassName("main")[0].style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementsByClassName("main")[0].style.marginLeft= "0";
+        }
+    </script>
+</body>
+</html>
