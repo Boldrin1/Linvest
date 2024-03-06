@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #FFF;
+}
+
+.border{
+border:1px solid #ff0000
+}
+.siderbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 1px solid #2f3336;
+    transition: all 0.35s;
+}
+
+.sidebar-header{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.logo-img{
+    width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s;
+    margin-left: 10px;
+}
+
+.logo-img:hover{
+transform: scale(1.5);
+}
+
+.siderbar button{
+    height: 60px;
+    background: transparent;
+    border:0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.siderbar button > span{
+display: inline-flex;
+align-items: center;
+gap:12px;
+height: 48px;
+padding: 0 16px 0 12px;
+border-radius: 24px;
+line-height: 1;
+transition: all 0.4s;
+}
+.siderbar button:hover > span{
+background-color: rgba(255, 255, 255, 0.08);
+}
+
+.siderbar button i {
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+}
+
+.siderbar button span{
+font-size: 16px;
+}
+
+.siderbar > nav{
+    /*1= quanto vai crecer o nosso item
+       1= quanto vai diminuir o nosso item
+       auto=define o fator de reducao
+    */
+    flex: 1 1 auto;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.main{
+    margin-left: 250px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+/*ajustando side bar com apenas os icones*/
+@media (width < 920px){
+    .siderbar{
+        width: 72px;
+    }
+    .siderbar button > span{
+    width: 50px;
+    }
+    .siderbar button > span > span{
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    .main{
+        transition: margin 0.4s;
+        margin-left: 78px;
+    }
+}
+
