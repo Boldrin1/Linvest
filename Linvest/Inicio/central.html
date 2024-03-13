@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Perfil de Investidor - Linvest</title>
+
+<body>
+    <header>
+        <h1>Teste de Perfil de Investidor</h1>
+    </header>
+    <!-- Botão para abrir o menu de navegação -->
+    <button class="nav-btn" onclick="openNav()">☰</button>
+    <!-- Menu de navegação lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="oie.html">Início</a>
+        <a href="investimentos.html">Investimentos</a>
+        <a href="suporte.html">Suporte</a>
+    </div>
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <form id="quizForm">
+            <ol>
+                <li>
+                    <p>1. Quanto tempo você pretende manter seus investimentos?</p>
+                    <input type="radio" name="q1" value="1"> Menos de 1 ano<br>
+                    <input type="radio" name="q1" value="2"> Entre 1 e 5 anos<br>
+                    <input type="radio" name="q1" value="3"> Mais de 5 anos<br>
+                </li>
+                <li>
+                    <p>2. Qual é a sua reação imediata quando o valor dos seus investimentos diminui significativamente em um curto período de tempo?</p>
+                    <input type="radio" name="q2" value="1"> Fico extremamente preocupado e considero vender imediatamente para evitar mais perdas.<br>
+                    <input type="radio" name="q2" value="2"> Fico um pouco preocupado, mas mantenho a calma e espero para ver se a situação melhora.<br>
+                    <input type="radio" name="q2" value="3"> Vejo isso como uma oportunidade de comprar mais enquanto os preços estão baixos.<br>
+                </li>
+                <li>
+                    <p>3. Qual porcentagem do seu patrimônio total você estaria disposto a investir em ativos de maior risco, como ações ou criptomoedas?</p>
+                    <input type="radio" name="q3" value="1"> Menos de 10%<br>
+                    <input type="radio" name="q3" value="2"> Entre 10% e 50%<br>
+                    <input type="radio" name="q3" value="3"> Mais de 50%<br>
+                </li>
+                <li>
+                    <p>4. Como você se sentiria se uma grande parte dos seus investimentos fossem perdidos em um ano?</p>
+                    <input type="radio" name="q4" value="1"> Arruinado financeiramente e emocionalmente.<br>
+                    <input type="radio" name="q4" value="2"> Desapontado, mas continuaria seguindo em frente.<br>
+                    <input type="radio" name="q4" value="3"> Encararia como parte do jogo e buscaria oportunidades para recuperar as perdas.<br>
+                </li>
+                <li>
+                    <p>5. Qual é o seu conhecimento sobre o mercado financeiro e investimentos?</p>
+                    <input type="radio" name="q5" value="1"> Limitado, apenas o básico.<br>
+                    <input type="radio" name="q5" value="2"> Tenho um entendimento médio sobre investimentos e estou disposto a aprender mais.<br>
+                    <input type="radio" name="q5" value="3"> Possuo um conhecimento avançado e estou sempre atualizado sobre o mercado.<br>
+                </li>
+            </ol>
+            <button type="button" onclick="calculateProfile()">Calcular Perfil</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* style.css */
+
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do parágrafo */
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #000000;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+p:first-letter {
+    font-size: 150%;
+    font-weight: bold;
+    color: #000000;
+}
+
+p strong {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+p em {
+    font-style:  "Times New Roman", Times, serif;
+    color: #008cff;
+}
+
+p a {
+    color: #0066cc;
+    text-decoration: none;
+    border-bottom: 1px dashed #0066cc;
+    transition: all 0.3s ease;
+}
+
+p a:hover {
+    color: #003366;
+    border-bottom-color: #003366;
+}
+
+/* Estilos do link Linvest */
+.logo {
+    color: #ffffff; /* Cor do texto */
+    font-family: "Times New Roman", Times, serif; /* Fonte do texto */
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/* Estilos gerais do link */
+a {
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background: rgb(67, 73, 134);
+    padding-inline: 16px;
+}
+
+/* Estilos da navegação */
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos da lista de navegação */
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+/* Estilos dos links na lista de navegação */
+.nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+}
+
+/* Estilos do ícone do menu */
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 4px solid #ffffff;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 10000px) {
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(4, 30, 116);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* Estilos ativos */
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}

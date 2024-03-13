@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETFs - Linvest</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ETFs - Linvest</h1>
+    </header>
+    <!-- Botão para abrir o menu de navegação -->
+    <button class="nav-btn" onclick="openNav()">☰</button>
+    <!-- Menu de navegação lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="oie.html">Início</a>
+        <a href="teste-qi.html">Teste de QI</a>
+        <a href="suporte.html">Suporte</a>
+    </div>
+    <!-- Conteúdo principal -->
+    <div class="main">
+        <div class="section-container">
+            <h2>Investindo em ETFs</h2>
+            <p>ETFs (Exchange Traded Funds) são fundos de investimento negociados na bolsa de valores que replicam índices de mercado, como o Ibovespa. Eles permitem que os investidores diversifiquem seus investimentos com baixo custo, pois são negociados em pregão como ações.</p>
+        </div>
+        <div class="calculator-container">
+            <h3>Calculadora de Juros Compostos</h3>
+            <div class="input-group">
+                <label for="initial-amount">Montante Inicial:</label>
+                <input type="number" id="initial-amount" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="annual-interest-rate">Taxa de Juros Anual (%):</label>
+                <input type="number" id="annual-interest-rate" min="0" step="0.01" required>
+            </div>
+            <div class="input-group">
+                <label for="investment-period">Período de Investimento (anos):</label>
+                <input type="number" id="investment-period" min="0" step="1" required>
+            </div>
+            <button onclick="calculate()">Calcular</button>
+            <div class="result" id="result"></div>
+        </div>
+        <!-- Exibição da taxa de juros anual -->
+        <div class="annual-interest-rate">
+            <p>Taxa de Juros Anual Atual: 5%</p>
+        </div>
+    </div>
+</body>
+</html>
