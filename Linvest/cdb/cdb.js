@@ -27,3 +27,4 @@ function toggleNav() {
         document.getElementsByClassName("main")[0].style.marginLeft = "250px";
     }
 }
+

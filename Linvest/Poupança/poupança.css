@@ -100,3 +100,17 @@ header {
 .result {
     margin-top: 20px;
 }
+
+.nav-btn {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
