@@ -18,21 +18,24 @@
         <a href="/Linvest/Investimentos/investimentos.html">Investimentos</a>
         <a href="/Linvest/Teste de QI/qi.html">Teste de QI</a>
     </div>
-</head>
-<body>
     <!-- Conteúdo principal -->
     <div class="main">
         <div class="section-container">
             <h2>Deixe seu feedback</h2>
-            <p>Por favor, selecione sua satisfação com o serviço:</p>
+            <p>Por favor, selecione sua satisfação com o serviço em uma escala de 1 a 10:</p>
             <form action="submit_feedback.php" method="post">
-                <select name="feedback" id="feedback" required>
-                    <option value="">Selecione uma opção</option>
-                    <option value="1">1 - Péssimo</option>
-                    <option value="2">2 - Ruim</option>
-                    <option value="3">3 - Regular</option>
-                    <option value="4">4 - Bom</option>
-                    <option value="5">5 - Excelente</option>
+                
+                    <option value="-">Selecione uma opção</option>
+                    <option value="1">1 - Ruim</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Neutro</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 - Muito satisfeito</option>
                 </select>
                 <input type="submit" value="Enviar Feedback">
             </form>

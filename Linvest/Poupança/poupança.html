@@ -6,40 +6,43 @@
     <script src="poupança.js"></script>
     <link rel="stylesheet" href="poupança.css">
     <title>Poupança - Linvest</title>
-</head>
-<body>
-    <header>
-        <h1>Poupança - Linvest</h1>
-        <!-- Menu de navegação horizontal -->
-        <nav class="navbar">
+    
+    <body>
+        <header>
+            <h1>Poupança - Linvest</h1>
+        </header>
+        <!-- Botão para abrir o menu de navegação -->
+        <button class="nav-btn" onclick="openNav()">☰</button>
+        <!-- Menu de navegação lateral -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/Linvest/PRINCIPAL/principal.html">Início</a>
             <a href="/Linvest/Teste de QI/qi.html">Teste de QI</a>
             <a href="/Linvest/Suporte/suporte.html">Suporte</a>
-        </nav>
-    </header>
-    <!-- Conteúdo principal -->
-    <div class="main">
-        <div class="section-container">
-            <h2>Investindo na Poupança</h2>
-            <p>A poupança é uma forma de investimento oferecida por bancos que oferece liquidez diária e isenção de imposto de renda para pessoas físicas. Embora seja uma opção de investimento conservadora, sua rentabilidade pode ser baixa em comparação com outras alternativas de renda fixa.</p>
         </div>
-        <div class="calculator-container">
-            <h3>Calculadora de Juros Compostos</h3>
-            <div class="input-group">
-                <label for="initial-amount">Montante Inicial:</label>
-                <input type="number" id="initial-amount" min="0" required>
+        <!-- Conteúdo principal -->
+        <div class="main">
+            <div class="section-container">
+                <h2>Investindo na Poupança</h2>
+                <p>A poupança é uma forma de investimento oferecida por bancos que oferece liquidez diária e isenção de imposto de renda para pessoas físicas. Embora seja uma opção de investimento conservadora, sua rentabilidade pode ser baixa em comparação com outras alternativas de renda fixa.</p>
             </div>
-            <div class="input-group">
-                <label for="annual-interest-rate">Taxa de Juros Anual (%):</label>
-                <input type="number" id="annual-interest-rate" min="0" step="0.01" required>
+            <div class="calculator-container">
+                <h3>Calculadora de Juros Compostos</h3>
+                <div class="input-group">
+                    <label for="initial-amount">Montante Inicial:</label>
+                    <input type="number" id="initial-amount" min="0" required>
+                </div>
+                <div class="input-group">
+                    <label for="annual-interest-rate">Taxa de Juros Anual (%):</label>
+                    <input type="number" id="annual-interest-rate" min="0" step="0.01" required>
+                </div>
+                <div class="input-group">
+                    <label for="investment-period">Período de Investimento (anos):</label>
+                    <input type="number" id="investment-period" min="0" step="1" required>
+                </div>
+                <button onclick="calculate()">Calcular</button>
+                <div class="result" id="result"></div>
             </div>
-            <div class="input-group">
-                <label for="investment-period">Período de Investimento (anos):</label>
-                <input type="number" id="investment-period" min="0" step="1" required>
-            </div>
-            <button onclick="calculate()">Calcular</button>
-            <div class="result" id="result"></div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
