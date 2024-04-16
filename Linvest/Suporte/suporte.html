@@ -7,23 +7,18 @@
     <header>
         <h1>Suporte - Linvest</h1>
     </header>
-    <!-- Botão para abrir o menu de navegação -->
-    <button class="nav-btn" onclick="openNav()">☰</button>
-    <!-- Menu de navegação lateral -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <link rel="stylesheet" href="suporte.css">
-        <script src="./suporte.js"></script>
-        <a href="/Linvest/PRINCIPAL/principal.html">Início</a>
-        <a href="/Linvest/Investimentos/investimentos.html">Investimentos</a>
-        <a href="/Linvest/Teste de QI/qi.html">Teste de QI</a>
-    </div>
+    <nav class="navbar">
+        <a href="http://127.0.0.1:5500/Linvest/PRINCIPAL/principal.html">Inicio</a>
+        <a href="/Linvest/Investimentos/investimentos.html" class="active">Investimento</a>
+        <a href="/Linvest/Teste de QI/qi.html">Projeto de vida</a>
+        </nav>
+    <link rel="stylesheet" href="suporte.css">
     <!-- Conteúdo principal -->
     <div class="main">
         <div class="section-container">
             <h2>Deixe seu feedback</h2>
             <p>Por favor, selecione sua satisfação com o serviço em uma escala de 1 a 10:</p>
-            <form action="submit_feedback.php" method="post">
+            <form action="submit_feedback" method="post">
                 
                     <option value="-">Selecione uma opção</option>
                     <option value="1">1 - Ruim</option>
@@ -43,7 +38,7 @@
         <div class="section-container">
             <h2>Envie uma mensagem</h2>
             <p>Se você tem alguma dúvida ou precisa de suporte, sinta-se à vontade para nos enviar uma mensagem:</p>
-            <form action="submit_message.php" method="post">
+            <form action="submit_message" method="post">
                 <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
                 <input type="submit" value="Enviar Mensagem">
             </form>
