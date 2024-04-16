@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Linvest/cdb/cdb.css">
+    <link rel="stylesheet" href="../cdb/cdb.css">
     <script src="./cdb.js"></script>
    
     <title>CDB - Linvest</title>
@@ -16,11 +16,19 @@
     <header>
         <h1>CDB - Linvest</h1>
     </header>
-    <nav class="navbar">
-        <a href="http://127.0.0.1:5500/Linvest/Investimentos/investimentos.html">Voltar</a>
-        <a href="/Linvest/Teste de QI/qi.html">Projeto de vida</a>
-        <a href="/Linvest/Suporte/suporte.html">Suporte</a>
-        </nav>
+    <!-- Botão para abrir o menu de navegação -->
+    <button class="nav-btn" onclick="openNav()">☰</button>
+    <!-- Menu de navegação lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../PRINCIPAL/principal.html">Início</a>
+        <a href="../Teste de QI/qi.html">Teste de QI</a>
+        <a href="../Suporte/suporte.html">Suporte</a>
+        <link rel="stylesheet" href="cdb.css">
+       
+      
+        
+    </div>
     <!-- Conteúdo principal -->
     <div class="main">
         <div class="section-container">

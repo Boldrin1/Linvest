@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto de vida</title>
-    <link rel="stylesheet" href="qi.css">
-    <script src="./qi.js"></script>
 </head>
 <body>
     <header>
-        <h1>Projeto de vida</h1>
+        <h1>Teste de Perfil de Investidor</h1>
     </header>
-   <!-- Navbar Horizontal -->
-   <nav class="navbar">
-    <a href="http://127.0.0.1:5500/Linvest/PRINCIPAL/principal.html">Inicio</a>
-    <a href="/Linvest/Investimentos/investimentos.html" class="active">Investimento</a>
-    <a href="/Linvest/Suporte/suporte.html">Suporte</a>
-</nav>
+    <!-- Botão para abrir o menu de navegação -->
+    <button class="nav-btn" onclick="openNav()">☰</button>
+    <!-- Menu de navegação lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <link rel="stylesheet" href="qi.css">
+        <script src="./qi.js"></script>
+        <a href="../PRINCIPAL/principal.html">Início</a>
+        <a href="../Investimentos/investimentos.html">Investimentos</a>
+        <a href="../Suporte/suporte.html">Suporte</a>
+    </div>
     <!-- Conteúdo principal -->
-    <header></header>
+   
     <div class="content">
         <form id="quizForm">
             <ol>
@@ -57,31 +60,9 @@
         </form>
     
         <div id="result"></div>
-
-        <!-- Informações sobre projeto de vida -->
-        <div id="project-info">
-            <h2>Pontos sobre projeto e planejamento:</h2>
-            <p>Projeto e Planejamento de Vida Pessoal:</p>
-            <ul>
-                <li>Defina metas claras e alcançáveis para diferentes aspectos da sua vida, como carreira, saúde, relacionamentos, etc.</li>
-                <li>Crie um plano de ação para atingir essas metas, dividindo-as em passos menores e mais gerenciáveis.</li>
-                <li>Reserve tempo regularmente para revisar e ajustar seu plano, levando em consideração mudanças nas circunstâncias e prioridades.</li>
-            </ul>
-            <p>Projeto e Planejamento Empresarial:</p>
-            <ul>
-                <li>Estabeleça uma visão clara para o seu negócio, identificando seus objetivos de longo prazo e como você planeja alcançá-los.</li>
-                <li>Desenvolva um plano de negócios detalhado, incluindo análises de mercado, estratégias de marketing, e projeções financeiras.</li>
-                <li>Esteja preparado para adaptar seu plano conforme o mercado e as condições externas mudam, mantendo-se flexível e ágil.</li>
-            </ul>
-            <p>Projeto e Planejamento Financeiro:</p>
-            <ul>
-                <li>Faça um orçamento detalhado, identificando suas fontes de renda e despesas, e estabeleça metas realistas de economia e investimento.</li>
-                <li>Priorize a construção de um fundo de emergência para lidar com imprevistos e crises financeiras.</li>
-                <li>Considere buscar orientação profissional, como um consultor financeiro, para ajudá-lo a desenvolver uma estratégia de investimento personalizada e alcançar seus objetivos financeiros.</li>
-            </ul>
-        </div>
         
     </div>
+    
     
 </body>
 </html>

@@ -1,3 +1,11 @@
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
 function calculateProfile() {
     var form = document.getElementById("quizForm");
     var inputs = form.querySelectorAll('input[type="radio"]:checked');

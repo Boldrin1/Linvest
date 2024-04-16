@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Investimentos/investimentos.html">
+    <link rel="stylesheet" href="../PRINCIPAL/principal.css">
+    
+ 
     <title>Linvest - Seu Portal de Investimentos</title>
-    <link rel="stylesheet" href="/Linvest/Investimentos/investimentos.css">
-    <link rel="stylesheet" href="/Linvest/PRINCIPAL/principal.css">
-    <link rel="stylesheet" href="/Linvest/Navbar/navbar.css"> <!-- Adicionando o arquivo CSS para a navbar -->
+   
 </head>
 <body>
     <header>
         <h1>Linvest - Seu Portal de Investimentos</h1>
     </header>
-    <!-- Navbar Horizontal -->
-    <nav class="navbar">
-        <a href="/Linvest/Investimentos/investimentos.html" class="active">Investimento</a>
-        <a href="/Linvest/Teste de QI/qi.html">Projeto de vida</a>
-        <a href="/Linvest/Suporte/suporte.html">Suporte</a>
-    </nav>
+    <!-- Botão para abrir o menu de navegação -->
+    <button class="nav-btn" onclick="toggleNav()">☰</button>
+    <!-- Menu de navegação lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        <a href="../Investimentos/investimentos.html">Investimento</a>
+        <a href="../Teste de QI/qi.html">Teste de QI</a>
+        <a href="../Suporte/suporte.html">Suporte</a>
+        <script src="./script.js"></script>
+       
+    </div>
     <!-- Conteúdo principal -->
     <div class="main">
-        <div class="section-container" id="investimentos">
+        <div class="section-container">
             <h2>Investimentos</h2>
             <p>Nossa equipe reuniu informações sobre oportunidades de investimento para ajudá-lo a tomar decisões informadas sobre onde investir seu dinheiro.</p>
             <ul>
@@ -30,14 +37,15 @@
             </ul>
             <p>Cada seção fornece uma visão geral do tipo de investimento, seus benefícios e riscos.</p>
         </div>
-        <div class="section-container" id="teste-qi">
-            <h2>Projeto de vida</h2>
-            <p>Descubra seu perfil de investidor e traçe o melhor plano financeiro e pessoal com uma série de perguntas para autoconhecimento e organização pessoal e profissional.</p>
+        <div class="section-container2">
+            <h2>Teste de QI</h2>
+            <p>Teste seus conhecimentos sobre investimentos com nosso Teste de QI. Responda a uma série de perguntas para avaliar seu entendimento sobre os princípios básicos e avançados de investimento.</p>
         </div>
-        <div class="section-container" id="suporte">
+        <div class="section-container3">
             <h2>Suporte</h2>
             <p>Precisa de ajuda? Entre em contato com nossa equipe de suporte para obter assistência personalizada. Estamos aqui para responder às suas perguntas e orientá-lo em sua jornada de investimento.</p>
         </div>
     </div>
+
 </body>
 </html>
