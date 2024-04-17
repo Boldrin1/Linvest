@@ -1,9 +1,9 @@
-function openNav() {
+function toggleNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementsByClassName("main")[0].style.marginLeft = "250px";
 }
 
-function closeNav() {
+function toggleNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementsByClassName("main")[0].style.marginLeft= "0";
 }
@@ -15,4 +15,15 @@ function calculate() {
 
     var futureValue = initialAmount * Math.pow((1 + annualInterestRate / 100), investmentPeriod);
     document.getElementById("result").innerHTML = "Valor futuro do investimento: R$" + futureValue.toFixed(2);
+}
+
+function toggleNav() {
+    var sidenav = document.getElementById("mySidenav");
+    if (sidenav.style.width === "250px") {
+        sidenav.style.width = "0";
+        document.getElementsByClassName("main")[0].style.marginLeft = "0";
+    } else {
+        sidenav.style.width = "250px";
+        document.getElementsByClassName("main")[0].style.marginLeft = "250px";
+    }
 }

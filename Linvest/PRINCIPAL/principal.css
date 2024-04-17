@@ -59,31 +59,45 @@ header {
 .main {
     transition: margin-left 0.5s;
     padding: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 50px;
-    gap: 50px;
+    margin-top: 500px;
+    
+}
+#container1 {
+    background-color: hsl(0, 45%, 98%);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#container2 {
+    background-color: hsl(0, 45%, 98%);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#container3{
+    background-color: hsl(0, 45%, 98%);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#Investimentos-texto{
     position: relative;
-    top:100px;
+    left: 740px;
+    font-size: 3.4em;
 }
-.section-container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+
+#teste-texto{
+    position: relative;
+    left: 740px;
+    font-size: 3.4em;
 }
-.section-container2 {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-}
-.section-container3{
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+
+#suporte-texto{
+    position: relative;
+    left: 780px;
+    font-size: 3.4em;
 }

@@ -1,8 +1,8 @@
-function openNav() {
+function toggleNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-function closeNav() {
+function toggleNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
@@ -27,5 +27,16 @@ function calculateProfile() {
     } else if (totalPoints >= 13 && totalPoints <= 15) {
         profile = "Perfil Arrojado";
         resultDiv.innerHTML = "<h2>Seu Perfil de Investidor é: " + profile + "</h2>" + "<p>Este tipo de investidor busca obter retornos mais altos e está disposto a assumir um nível significativo de risco em sua carteira. Está confortável com a volatilidade do mercado e tem um horizonte de investimento mais longo, o que lhe permite recuperar eventuais perdas. Costuma investir em ações de empresas em crescimento, fundos de investimento de maior risco, mercado de câmbio (forex) e até mesmo em criptomoedas. Está mais propenso a aproveitar oportunidades de curto prazo e pode acompanhar de perto o mercado financeiro.</p>";
+    }
+}
+
+function toggleNav() {
+    var sidenav = document.getElementById("mySidenav");
+    if (sidenav.style.width === "250px") {
+        sidenav.style.width = "0";
+        document.getElementsByClassName("main")[0].style.marginLeft = "0";
+    } else {
+        sidenav.style.width = "250px";
+        document.getElementsByClassName("main")[0].style.marginLeft = "250px";
     }
 }

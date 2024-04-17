@@ -45,11 +45,11 @@ header {
 .main {
     transition: margin-left 0.5s;
     padding: 20px;
-    margin-left: 250px;
+    margin-left: 40px;
 }
 .section-container {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
