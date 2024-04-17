@@ -9,6 +9,7 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
+    height: 100px;
 }
 /* Estilos para o menu de navegação lateral */
 .sidenav {
@@ -85,4 +86,10 @@ ul li {
     top: 10px;
     left: 10px;
     z-index: 2;
+}
+
+#invest{
+    position: relative;
+    top: 15px;
+    left: -15px;
 }
