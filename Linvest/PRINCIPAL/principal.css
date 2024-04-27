@@ -77,6 +77,8 @@ header {
   padding: 30px;
   margin-bottom: 20px;
   filter: drop-shadow(15px 5px 5px black);
+  position: relative;
+  top:-75px;
 }
 #container2 {
   background-color: hsl(0, 45%, 98%);
@@ -85,6 +87,8 @@ header {
   padding: 30px;
   margin-bottom: 20px;
   filter: drop-shadow(15px 5px 5px black);
+  position: relative;
+  top:-75px;
 }
 #container3{
   background-color: hsl(0, 45%, 98%);
@@ -93,12 +97,14 @@ header {
   padding: 30px;
   margin-bottom: 20px;
   filter: drop-shadow(15px 5px 5px black);
+  position: relative;
+  top:-75px;
 }
 
 #Investimentos-texto{
 
     font-size: 3em;
-    
+   
 }
 
 #teste-texto{
@@ -121,3 +127,4 @@ header {
     position: relative;
     top: -15px;
 }
+

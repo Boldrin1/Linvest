@@ -15,61 +15,62 @@
         <h1 id="linvest">Linvest - Seu Portal de Investimentos</h1>
     </header>
     <!-- Botão para abrir o menu de navegação -->
-    <button class="nav-btn" onclick="toggleNav()">☰</button>
+    <button class="nav-btn" onclick="toggleNav()" style="z-index: 1;">☰</button>
     <!-- Menu de navegação lateral -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
-        <a href="../Investimentos/investimentos.html">Investimento</a>
-        <a href="../Teste de QI/qi.html">Teste de QI</a>
-        <a href="../Suporte/suporte.html">Suporte</a>
-
+    <div id="mySidenav" class="sidenav" style="z-index: 1;">
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()" style="z-index: 1;">&times;</a>
+        <a href="../Investimentos/investimentos.html" style="z-index: 1;" >Investimento</a>
+        <a href="../Teste de QI/qi.html" style="z-index: 1;">Teste de QI</a>
+        <a href="../Suporte/suporte.html" style="z-index: 1;">Suporte</a>
     </div>
-    <div class="container py-5" id="principal">
-        <div id="ads" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="container py-5" id="principal" style="position: relative; z-index: 0;">
+        <div id="ads" class="carousel slide carousel-fade" data-bs-ride="carousel" style="position: relative; z-index: 0;">
+            <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev" type="button">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
             <div class="carousel-indicators">
                 <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
                 <button data-bs-target="#ads" data-bs-slide-to="1"></button>
                 <button data-bs-target="#ads" data-bs-slide-to="2"></button>
             </div>
             <div class="carousel-inner" style="filter: drop-shadow(15px 5px 5px black);">
-                <div class="carousel-item active" data-bs-interval="2900">
+                <div class="carousel-item active" data-bs-interval="2900" style="position: relative; z-index: 0;">
                     <img src="img1.png?random=1" alt="" class="d-block w-100">
                 </div>
-                <div class="carousel-item" data-bs-interval="2900">
+                <div class="carousel-item" data-bs-interval="2900" style="position: relative; z-index: 0;">
                     <img src="img2.png?random=2" alt="" class="d-block w-100">
                 </div>
-                <div class="carousel-item" data-bs-interval="2900">
+                <div class="carousel-item" data-bs-interval="2900" style="position: relative; z-index: 0;">
                     <img src="img3.png?random=3" alt="" class="d-block w-100">
                 </div>
             </div>
-            <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev" type="button">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
             <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next" type="button">
-                <span class="carousel-control-next-icon"></span>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
     <!-- Conteúdo principal -->
     <div class="main">
       <div class="row">
-          <div class="col-12" id="container1">
-              <h2 id="Investimentos-texto">Investimentos</h2>
-              <p>Nossa equipe reuniu informações sobre oportunidades de investimento para ajudá-lo a tomar decisões informadas sobre onde investir seu dinheiro.</p>
+          <div class="col-12" id="container1" style="text-align: center">
+              <h2 style="display: inline-block" id="Investimentos-texto">Investimentos</h2>
+              <p style="display: inline-block">Nossa equipe reuniu informações sobre oportunidades de investimento para ajudá-lo a tomar decisões informadas sobre onde investir seu dinheiro.</p>
               <ul>
-                  <li>CDB</li>
-                  <li>Poupança</li>
-                  <li>ETFs</li>
+                  <h5>CDB</h5>
+                  <h5>Poupança</h5>
+                  <h5>ETFs</h5>
               </ul>
-              <p>Cada seção fornece uma visão geral do tipo de investimento, seus benefícios e riscos.</p>
+              <p style="display: inline-block">Cada seção fornece uma visão geral do tipo de investimento, seus benefícios e riscos.</p>
           </div>
-          <div class="col-12" id="container2">
-              <h2 id="teste-texto">Teste de QI</h2>
-              <p>Teste seus conhecimentos sobre investimentos com nosso Teste de QI. Responda a uma série de perguntas para avaliar seu entendimento sobre os princípios básicos e avançados de investimento.</p>
+          <div class="col-12" id="container2" style="text-align: center">
+              <h2 style="display: inline-block" id="teste-texto">Projete seu tipo de Investidor</h2>
+              <p style="display: inline-block">Teste seus conhecimentos sobre investimentos com nosso Projeto de Investidor. Responda a uma série de perguntas para avaliar seu entendimento sobre os princípios básicos e avançados de investimento.</p>
           </div>
-          <div class="col-12" id="container3">
-              <h2 id="suporte-texto">Suporte</h2>
-              <p>Precisa de ajuda? Entre em contato com nossa equipe de suporte para obter assistência personalizada. Estamos aqui para responder às suas perguntas e orientá-lo em sua jornada de investimento.</p>
+          <div class="col-12" id="container3" style="text-align: center">
+              <h2 style="display: inline-block" id="suporte-texto">Suporte</h2>
+              <p style="display: inline-block">Precisa de ajuda? Entre em contato com nossa equipe de suporte para obter assistência personalizada. Estamos aqui para responder às suas perguntas e orientá-lo em sua jornada de investimento.</p>
           </div>
       </div>
   </div>
