@@ -22,72 +22,57 @@
         <a href="../Investimentos/investimentos.html">Investimento</a>
         <a href="../Teste de QI/qi.html">Teste de QI</a>
         <a href="../Suporte/suporte.html">Suporte</a>
-        
 
-       
     </div>
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="./img.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="./img2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="./img3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+    <div class="container py-5" id="principal">
+        <div id="ads" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+                <button data-bs-target="#ads" data-bs-slide-to="1"></button>
+                <button data-bs-target="#ads" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner" style="filter: drop-shadow(15px 5px 5px black);">
+                <div class="carousel-item active" data-bs-interval="2900">
+                    <img src="img1.png?random=1" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2900">
+                    <img src="img2.png?random=2" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2900">
+                    <img src="img3.png?random=3" alt="" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
     <!-- Conteúdo principal -->
     <div class="main">
-
-
-        <div class="row">
-         <div class="col-md-1.5" id="container1">
-            <h2 id="Investimentos-texto">Investimentos</h2>
-            <p>Nossa equipe reuniu informações sobre oportunidades de investimento para ajudá-lo a tomar decisões informadas sobre onde investir seu dinheiro.</p>
-            <ul>
-                <li>CDB</li>
-                <li>Poupança</li>
-                <li>ETFs</li>
-            </ul>
-            <p>Cada seção fornece uma visão geral do tipo de investimento, seus benefícios e riscos.</p>
-         </div>
-        </div>
-        
-        
-        <div>
-         <div class="col-md-1.5" id="container2">
-            <h2 id="teste-texto">Teste de QI</h2>
-            <p>Teste seus conhecimentos sobre investimentos com nosso Teste de QI. Responda a uma série de perguntas para avaliar seu entendimento sobre os princípios básicos e avançados de investimento.</p>
-         </div>
-        </div>
-
-
-        <div>
-         <div class="col-md-1.5" id="container3">
-            <h2 id="suporte-texto">Suporte</h2>
-            <p>Precisa de ajuda? Entre em contato com nossa equipe de suporte para obter assistência personalizada. Estamos aqui para responder às suas perguntas e orientá-lo em sua jornada de investimento.</p>
-         </div>
-        </div> 
-        
-
-    </div>
-    
+      <div class="row">
+          <div class="col-12" id="container1">
+              <h2 id="Investimentos-texto">Investimentos</h2>
+              <p>Nossa equipe reuniu informações sobre oportunidades de investimento para ajudá-lo a tomar decisões informadas sobre onde investir seu dinheiro.</p>
+              <ul>
+                  <li>CDB</li>
+                  <li>Poupança</li>
+                  <li>ETFs</li>
+              </ul>
+              <p>Cada seção fornece uma visão geral do tipo de investimento, seus benefícios e riscos.</p>
+          </div>
+          <div class="col-12" id="container2">
+              <h2 id="teste-texto">Teste de QI</h2>
+              <p>Teste seus conhecimentos sobre investimentos com nosso Teste de QI. Responda a uma série de perguntas para avaliar seu entendimento sobre os princípios básicos e avançados de investimento.</p>
+          </div>
+          <div class="col-12" id="container3">
+              <h2 id="suporte-texto">Suporte</h2>
+              <p>Precisa de ajuda? Entre em contato com nossa equipe de suporte para obter assistência personalizada. Estamos aqui para responder às suas perguntas e orientá-lo em sua jornada de investimento.</p>
+          </div>
+      </div>
+  </div>
+  
 </body>
 </html>
