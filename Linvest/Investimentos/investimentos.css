@@ -45,8 +45,10 @@ header {
 /* Estilos para o conteúdo */
 .main {
     transition: margin-left 0.5s;
-    padding: 20px;
-    margin-left: 40px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1% 30% 30% 30%;
+    grid-column-gap: 30px;
 }
 .section-container {
     background-color: #fff;
@@ -54,6 +56,29 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
+    grid-column: 2;
+    height: 500px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.section-container2 {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  grid-column: 3;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+.section-container3 {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  grid-column: 4;
+  filter: drop-shadow(5px 5px 5px black);
 }
 .section-container h2 {
     color: #333;
@@ -435,4 +460,476 @@ ul li {
     position: relative;
     top:-500px;
     left: 1200px;
+}
+
+
+
+
+.in,.in::after {
+  padding: 20px 75px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+.in::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'INICIO';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.in:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #ffffff, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.in:hover {
+  text-shadow: -1px -1px 0px #ffffff, 1px 1px 0px #E94BE8;
+}
+
+.in:hover {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 10px 50px -10px rgb(255, 255, 255);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+
+
+
+
+.ves,.ves::after {
+  padding: 20px 5px;
+  font-size: 26px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+.ves::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'INVESTIMENTOS';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.ves:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #ffffff, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.ves:hover {
+  text-shadow: -1px -1px 0px #ffffff, 1px 1px 0px #E94BE8;
+}
+
+.ves:hover {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 10px 50px -10px rgb(255, 255, 255);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.su,.su::after {
+  padding: 20px 65px;
+  font-size: 17.5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+.su::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'TESTE DE INVESTIDOR';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.su:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #ffffff, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.su:hover {
+  text-shadow: -1px -1px 0px #ffffff, 1px 1px 0px #E94BE8;
+}
+
+.su:hover {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 10px 50px -10px rgb(255, 255, 255);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+
+
+
+
+#in{
+  position: relative;
+  left: -10px;
+  font-size: 1.2em;
+}
+
+#ves{
+  position: relative;
+  left: -6px;
+  font-size: 0.9em;
+}
+
+#su{
+  position: relative;
+  left: -7px;
+  font-size: 1.2em;
+}
+
+
+#cd{
+  font-size: 2em; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  text-decoration: none; /* Remover sublinhado padrão do link */
+  position: relative;
+  left: 120px;
+}
+
+
+#cd-button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  left: 80px;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+#cd-button:hover {
+  background-color: #000000;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#cd-button:active {
+  transform: translateY(-1px);
+}
+
+#pou{
+  font-size: 2em; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  text-decoration: none; /* Remover sublinhado padrão do link */
+  position: relative;
+  left: 90px;
+}
+
+#etf{
+  font-size: 2em; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  text-decoration: none; /* Remover sublinhado padrão do link */
+  position: relative;
+  left: 125px;
+}
+
+#pou2 {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  left: 80px;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+#pou2:hover {
+  background-color: #000000;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#pou2:active {
+  transform: translateY(-1px);
+}
+
+#etfss {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  left: 80px;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+#etfss:hover {
+  background-color: #000000;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#etfss:active {
+  transform: translateY(-1px);
 }

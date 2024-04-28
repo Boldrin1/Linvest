@@ -15,13 +15,13 @@
         <h1 id="linvest">Linvest - Seu Portal de Investimentos</h1>
     </header>
     <!-- Botão para abrir o menu de navegação -->
-    <button class="nav-btn" onclick="toggleNav()" style="z-index: 1;">☰</button>
+    <button class="nav-btn" onclick="toggleNav()" >☰</button>
     <!-- Menu de navegação lateral -->
     <div id="mySidenav" class="sidenav" style="z-index: 1;">
-      <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()" style="z-index: 1;">&times;</a>
-        <a href="../Investimentos/investimentos.html" style="z-index: 1;" >Investimento</a>
-        <a href="../Teste de QI/qi.html" style="z-index: 1;">Teste de QI</a>
-        <a href="../Suporte/suporte.html" style="z-index: 1;">Suporte</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()" style="z-index: 1;">&times;</a>
+        <button class="bu"><a href="../Investimentos/investimentos.html" style="z-index: 1;" id="in" >Investimentos</a></button>
+        <button class="te"><a href="../Teste de QI/qi.html" style="z-index: 1;" id="te">Teste de Investidor</a></button>
+        <button class="su"><a href="../Suporte/suporte.html" style="z-index: 1;" id="su">Suporte</a></button>
     </div>
     <div class="container py-5" id="principal" style="position: relative; z-index: 0;">
         <div id="ads" class="carousel slide carousel-fade" data-bs-ride="carousel" style="position: relative; z-index: 0;">
