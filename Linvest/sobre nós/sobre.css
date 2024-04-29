@@ -1,0 +1,189 @@
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    height: 130px;
+}
+
+
+#linvest {
+    position: relative;
+    top: 33px;
+    left: 5px;
+}
+
+/* Estilos para o menu de navegação lateral */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #444;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 16px 8px 16px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffd700; /* Dourado ao passar o mouse */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Estilos para o botão de navegação */
+.nav-btn {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+/* Estilos para o conteúdo principal */
+.main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.container {
+    background-color: hsl(0, 45%, 98%);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto; /* Alinhar ao centro */
+    max-width: 800px; /* Limitar largura */
+    filter: drop-shadow(15px 5px 5px black);
+}
+
+/* Estilos para botões */
+
+.bu{
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    position: relative;
+}
+
+.bu::after{
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bu::after {
+    content: 'INICIO';
+}
+
+.bu:hover::after{
+    animation: glitch_4011 1s steps(2, end);
+    text-shadow: -3px -3px 0px #ffffff, 3px 3px 0px #E94BE8;
+    border: 3px solid #ffffff;
+}
+
+.bu:hover{
+    text-shadow: -1px -1px 0px #ffffff, 1px 1px 0px #E94BE8;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 10px 50px -10px #ffffff;
+}
+
+
+/* Animação de glitch para hover */
+@keyframes glitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px, -10px);
+    }
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px, 10px);
+    }
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px, 0px);
+    }
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px, 10px);
+    }
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px, -10px);
+    }
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px, 10px);
+    }
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px, -10px);
+    }
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px, -10px);
+    }
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px, 10px);
+    }
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+}
